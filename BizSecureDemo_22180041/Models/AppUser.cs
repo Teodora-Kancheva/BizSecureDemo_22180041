@@ -7,5 +7,7 @@
         public string Email { get; set; } = string.Empty;
 
         public string PasswordHash { get; set; } = string.Empty;
+        public int? FailedLogins { get; set; }
+        public DateTime? LockoutUntilUtc { get; set; }
     }
 }
