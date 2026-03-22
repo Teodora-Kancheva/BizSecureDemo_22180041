@@ -152,8 +152,8 @@ public class AccountController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Login(LoginVm vm)
     {
-        if (!ModelState.IsValid)
-            return View(vm);
+       if (!ModelState.IsValid)
+           return View(vm);
 
         var email = vm.Email.Trim().ToLowerInvariant();
         var user = await _db.Users.FirstOrDefaultAsync(u => u.Email == email);

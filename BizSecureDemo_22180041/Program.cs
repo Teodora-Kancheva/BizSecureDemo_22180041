@@ -2,6 +2,7 @@ using BizSecureDemo_22180041.Data;
 using BizSecureDemo_22180041.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 
 //var builder = WebApplication.CreateBuilder(args);
